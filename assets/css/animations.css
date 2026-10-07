@@ -1,0 +1,187 @@
+/* ===================================================================
+   ANIMATIONS & KEYFRAMES (UI/UX PRO MAX GSAP + CSS ENHANCEMENTS)
+   =================================================================== */
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes pulse-cyan {
+  0% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(56, 189, 248, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.2deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-1.2deg);
+  }
+}
+
+/* Smooth Ambient Card Breathing Glow */
+@keyframes ambient-glow {
+  0%, 100% {
+    box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(56, 189, 248, 0.08);
+  }
+  50% {
+    box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.7), 0 0 35px rgba(56, 189, 248, 0.16);
+  }
+}
+
+/* Holographic Shimmer */
+@keyframes holographic-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background-color: var(--accent-emerald);
+  vertical-align: middle;
+  animation: cursor-blink 1s infinite;
+  margin-left: 2px;
+}
+
+/* Architecture Packet Stream Animation */
+@keyframes packet-travel {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+.packet-glow {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
+}
+
+/* Performance Benchmark Bars */
+.benchmark-progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.benchmark-progress-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fill-legacy {
+  background: linear-gradient(90deg, #ef4444 0%, #f59e0b 100%);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+}
+
+.fill-jonathan {
+  background: linear-gradient(90deg, #10b981 0%, #38bdf8 100%);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.5);
+}
+
+/* Mobile Nav Drawer */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background: rgba(10, 14, 25, 0.96);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid var(--border-subtle);
+  z-index: 1500;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: -15px 0 40px rgba(0, 0, 0, 0.7);
+}
+
+.mobile-nav-drawer.open {
+  right: 0;
+}
+
+.mobile-drawer-close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.mobile-nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mobile-nav-link:hover {
+  color: var(--accent-cyan);
+}

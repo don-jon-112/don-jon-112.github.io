@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonathan Alva | Java & Spring Boot Team Lead | SAP Hybris Commerce Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Jonathan Alva — Java & Spring Boot Team Lead and SAP Hybris Commerce Developer at PT. Astra Graphia Information Technology (AGIT), Jakarta. Architecting modern enterprise systems with Java, Spring Boot, and Apache Kafka.">
+  <meta name="keywords" content="Jonathan Alva, Java & Spring Boot Team Lead, SAP Hybris Commerce Developer, Backend Engineering, Java, Spring Boot, Apache Kafka, Jakarta Developer">
+  <meta name="author" content="Jonathan Alva">
+  <meta property="og:title" content="Jonathan Alva | Java & Spring Boot Team Lead">
+  <meta property="og:description" content="Java & Spring Boot Team Lead | SAP Hybris Commerce Developer | PT. Astra Graphia Information Technology">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.linkedin.com/in/jnthnalva">
+
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true"></div>
+
+  <!-- Background Ambient Lights & Interactive Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- ===================================================================
+       HEADER & FLOATING NAVBAR
+       =================================================================== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" id="nav-brand">
+        <span class="brand-bracket">&lt;</span>JA<span class="brand-bracket"> /&gt;</span>
+        <span class="nav-status-dot" title="Available for Consulting & Leadership Roles"></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">Expertise</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#terminal" class="nav-link">CLI</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- CTA Connect Button -->
+        <a href="https://www.linkedin.com/in/jnthnalva" target="_blank" rel="noopener noreferrer" class="btn-primary-sm" id="nav-cta-linkedin">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-nav-drawer" aria-hidden="true">
+    <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu">&times;</button>
+    <a href="#hero" class="mobile-nav-link">Overview</a>
+    <a href="#about" class="mobile-nav-link">Expertise & Stack</a>
+    <a href="#architecture" class="mobile-nav-link">System Architecture</a>
+    <a href="#experience" class="mobile-nav-link">Career & Leadership</a>
+    <a href="#projects" class="mobile-nav-link">Enterprise Projects</a>
+    <a href="#terminal" class="mobile-nav-link">Developer CLI</a>
+    <a href="#contact" class="mobile-nav-link">Get in Touch</a>
+    <div style="margin-top:auto; display:flex; flex-direction:column; gap:12px;">
+      <a href="https://www.linkedin.com/in/jnthnalva" target="_blank" class="btn-primary" style="justify-content:center;">Connect on LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       HERO SECTION
+       =================================================================== -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="nav-status-dot"></span>
+            <span>Java & Spring Boot Team Lead · AGIT (Jakarta)</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting <span class="text-gradient-cyan">Scalable</span> Backend as <br>
+            <span id="scramble-role" class="scramble-role text-gradient-emerald">Java & Spring Boot Team Lead</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Hi, I'm <strong>Jonathan Alva</strong> — Java &amp; Spring Boot Team Lead and SAP Hybris Commerce Specialist based in <strong>Jakarta, Indonesia</strong>. Currently leading engineering squads at <strong>PT. Astra Graphia Information Technology (AGIT)</strong>, spearheading the strategic initiative to <strong>rewrite legacy SAP Hybris Commerce with high-performance Spring Boot microservices</strong>, migrate critical Hybris APIs, build the enterprise core system, and orchestrate zero-downtime data migration leveraging <strong>Apache Kafka</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#architecture" class="btn-primary" id="hero-btn-architecture">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              <span>Explore Architecture</span>
+            </a>
+
+            <a href="#terminal" class="btn-terminal" id="hero-btn-terminal">
+              <span>$ ./open-cli</span>
+              <span class="terminal-cursor"></span>
+            </a>
+
+            <a href="#contact" class="btn-secondary" id="hero-btn-contact">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar with Dynamic Counter Animation -->
+          <div class="hero-metrics-bar">
+            <div class="metric-item">
+              <div class="metric-number" data-counter-target="6" data-counter-suffix="+">6<span>+</span></div>
+              <div class="metric-label">Years of Industry Engineering</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number" data-counter-target="100" data-counter-suffix="k+">100k<span>+</span></div>
+              <div class="metric-label">Daily Enterprise Transactions</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-number" data-counter-target="99.98" data-counter-suffix="%" data-counter-decimals="2">99.98<span>%</span></div>
+              <div class="metric-label">Engineered System Uptime SLA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="hero-visual">
+          <div class="portrait-card spotlight-card" data-tilt id="hero-portrait-card">
+            
+            <div class="portrait-inner">
+              <img src="assets/images/profile.jpg" alt="Jonathan Alva - Java & Spring Boot Team Lead" class="portrait-img" loading="eager">
+              <div class="portrait-overlay-glow"></div>
+              
+              <div class="portrait-meta">
+                <h2 class="portrait-name">Jonathan Alva</h2>
+                <div class="portrait-role">Java & Spring Boot Team Lead</div>
+              </div>
+            </div>
+
+            <!-- Integrated Specs Grid (Clean, Responsive, Never Cut Off) -->
+            <div class="portrait-specs-grid">
+              <div class="spec-card">
+                <div class="spec-icon java">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                  </svg>
+                </div>
+                <div class="spec-info">
+                  <span class="spec-label">SPECIALTY</span>
+                  <span class="spec-value">Java / Spring Boot</span>
+                </div>
+              </div>
+
+              <div class="spec-card">
+                <div class="spec-icon spring">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="spec-info">
+                  <span class="spec-label">PLATFORM</span>
+                  <span class="spec-value">SAP Hybris Commerce</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SENIOR COMPETENCIES BENTO GRID
+       =================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">CORE CAPABILITIES</div>
+        <h2 class="section-title">Engineering Mastery & Core Stack</h2>
+        <p class="section-subtitle">
+          Proven leadership and architectural depth across enterprise backend systems, custom ERP workflows, and high-concurrency e-commerce backbones.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- Bento 1: Hybris Rewrite, Spring Boot Core System & Password Migration -->
+        <div class="bento-card bento-col-8">
+          <div class="bento-icon-wrapper cyan">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="bento-title">SAP Hybris Modernization & Spring Boot Core System</h3>
+          <p class="bento-desc">
+            Spearheading the strategic rewrite of legacy monolithic <strong>SAP Hybris Commerce</strong> into decoupled, cloud-ready <strong>Spring Boot</strong> microservices on <strong>Java</strong>. Architecting the high-availability Core System, migrating complex Hybris APIs, exploring <strong>zero-friction password &amp; credential migration</strong> (just-in-time cryptographic re-hashing from Hybris PBKDF2/SHA to Spring Security Argon2/BCrypt without forced resets), and leveraging <strong>Apache Kafka</strong> for event streaming and zero-downtime data migration.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Apache Kafka</span>
+            <span class="skill-tag">Password Migration</span>
+            <span class="skill-tag">Spring Security</span>
+            <span class="skill-tag">SAP Hybris Migration</span>
+            <span class="skill-tag">Core System Design</span>
+            <span class="skill-tag">API Migration</span>
+            <span class="skill-tag">Spring Data JPA</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Bento 2: Developer Management & Team Leadership -->
+        <div class="bento-card bento-col-4">
+          <div class="bento-icon-wrapper emerald">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="bento-title">Developer Management & Team Lead</h3>
+          <p class="bento-desc">
+            Directing engineering squads at AGIT. Managing developer sprint tasks, conducting rigorous code review rubrics, architecting scalable solutions, and removing technical blockers to deliver mission-critical enterprise migrations.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Developer Management</span>
+            <span class="skill-tag">Sprint Planning</span>
+            <span class="skill-tag">Architecture Reviews</span>
+            <span class="skill-tag">Code Quality</span>
+            <span class="skill-tag">Agile / Scrum</span>
+          </div>
+        </div>
+
+        <!-- Bento 3: ERP & Business Systems -->
+        <div class="bento-card bento-col-4">
+          <div class="bento-icon-wrapper violet">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </div>
+          <h3 class="bento-title">ERP Engineering (Odoo)</h3>
+          <p class="bento-desc">
+            Extensive background customizing <strong>Odoo 10 / 12</strong> with Python: tailoring sales cycles, warehouse multi-location tracking, automated invoices, and XML-RPC API connections.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Odoo 12 ERP</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">QWeb Reports</span>
+          </div>
+        </div>
+
+        <!-- Bento 4: Data & Performance Tuning -->
+        <div class="bento-card bento-col-4">
+          <div class="bento-icon-wrapper amber">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="bento-title">Caching & Latency Tuning</h3>
+          <p class="bento-desc">
+            Cutting response times by over 40% using multi-tier in-memory caching strategies (Ehcache & Redis), database query plan profiling, and indexed entity relationships.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Query Optimization</span>
+            <span class="skill-tag">HikariCP</span>
+            <span class="skill-tag">Connection Pooling</span>
+          </div>
+        </div>
+
+        <!-- Bento 5: Full Stack & Infrastructure -->
+        <div class="bento-card bento-col-4">
+          <div class="bento-icon-wrapper cyan">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="bento-title">Fullstack & Networking</h3>
+          <p class="bento-desc">
+            Hands-on frontend engineering with ReactJS and mobile clients via Flutter. Formally trained with Cisco CCNA credentials for network protocols, routing, and switching.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">ReactJS</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Cisco CCNA</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       INTERACTIVE SYSTEM ARCHITECTURE VISUALIZER
+       =================================================================== */ -->
+  <section id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">INTERACTIVE ARCHITECTURE</div>
+        <h2 class="section-title">High-Scalability Enterprise Topology</h2>
+        <p class="section-subtitle">
+          Click any component in the pipeline below to inspect the design patterns, telemetry, and optimizations implemented by Jonathan Alva.
+        </p>
+      </div>
+
+      <div class="arch-visualizer-container">
+        <div class="arch-controls-header">
+          <div class="arch-status">
+            <span class="arch-pulse-dot"></span>
+            <span>SIMULATED ENTERPRISE TOPOLOGY · PRODUCTION READY</span>
+          </div>
+          <div style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);">
+            Click a node to inspect details
+          </div>
+        </div>
+
+        <!-- Flow Diagram -->
+        <div class="arch-flow-diagram">
+          <div class="arch-node" data-node="client" id="arch-node-client">
+            <div class="arch-node-badge">STEP 01</div>
+            <div class="arch-node-name">Client Layer</div>
+            <div class="arch-node-tech">React · Flutter · Web</div>
+          </div>
+
+          <div class="arch-node" data-node="gateway" id="arch-node-gateway">
+            <div class="arch-node-badge">STEP 02</div>
+            <div class="arch-node-name">Strangler Proxy</div>
+            <div class="arch-node-tech">API Migration Routing</div>
+          </div>
+
+          <div class="arch-node active" data-node="core" id="arch-node-core">
+            <div class="arch-node-badge">STEP 03 (CORE)</div>
+            <div class="arch-node-name">Spring Boot Core</div>
+            <div class="arch-node-tech">Rewriting SAP Hybris</div>
+          </div>
+
+          <div class="arch-node" data-node="kafka" id="arch-node-kafka">
+            <div class="arch-node-badge">STEP 04</div>
+            <div class="arch-node-name">Apache Kafka</div>
+            <div class="arch-node-tech">Event Streaming & Sync</div>
+          </div>
+
+          <div class="arch-node" data-node="caching" id="arch-node-caching">
+            <div class="arch-node-badge">STEP 05</div>
+            <div class="arch-node-name">Distributed Cache</div>
+            <div class="arch-node-tech">Ehcache · Redis L1/L2</div>
+          </div>
+
+          <div class="arch-node" data-node="database" id="arch-node-db">
+            <div class="arch-node-badge">STEP 06</div>
+            <div class="arch-node-name">Data Persistence</div>
+            <div class="arch-node-tech">PostgreSQL Cluster</div>
+          </div>
+        </div>
+
+        <!-- Selected Node Details Box -->
+        <div class="arch-detail-card">
+          <div>
+            <h3 class="arch-detail-title" id="arch-detail-title">Spring Boot Core System (Rewriting SAP Hybris)</h3>
+            <div style="font-family:var(--font-mono); font-size:0.84rem; color:var(--accent-emerald); margin-bottom:12px;" id="arch-detail-tech">
+              Java · Spring Boot · Virtual Threads · Spring Data JPA
+            </div>
+            <p class="arch-detail-desc" id="arch-detail-desc">
+              The core transaction backbone engineered by Jonathan Alva. Handles catalog synchronization, multi-step cart validation, complex dynamic pricing rules, order orchestration, cron job workflows, and high-concurrency checkout pipelines.
+            </p>
+          </div>
+
+          <div class="arch-metrics-box" id="arch-metrics-container">
+            <div class="arch-metric-row">
+              <span class="arch-metric-name">Throughput Capacity</span>
+              <span class="arch-metric-val">100k+ Daily Tx</span>
+            </div>
+            <div class="arch-metric-row">
+              <span class="arch-metric-name">Checkout Latency Cut</span>
+              <span class="arch-metric-val">-42% Response Time</span>
+            </div>
+            <div class="arch-metric-row">
+              <span class="arch-metric-name">Microservices Deployed</span>
+              <span class="arch-metric-val">12+ Services</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise Benchmark & Latency Widget -->
+      <div class="benchmark-container">
+        
+        <!-- Legacy / Non-Optimized -->
+        <div class="benchmark-card spotlight-card">
+          <div class="benchmark-header">
+            <div>
+              <h4 style="font-size:1.1rem; color:var(--text-main);">Legacy Monolith Architecture</h4>
+              <div style="font-size:0.8rem; color:var(--text-muted); font-family:var(--font-mono);">Traditional SQL Joins & Uncached State</div>
+            </div>
+            <span class="benchmark-badge-legacy">HIGH BOTTLENECK</span>
+          </div>
+
+          <div class="benchmark-stat-row">
+            <div class="benchmark-stat-labels">
+              <span style="color:var(--text-secondary);">Avg Checkout Latency</span>
+              <span style="font-family:var(--font-mono); color:#ef4444; font-weight:700;">2,400 ms</span>
+            </div>
+            <div class="benchmark-progress-bar">
+              <div class="benchmark-progress-fill fill-legacy" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <div class="benchmark-stat-row">
+            <div class="benchmark-stat-labels">
+              <span style="color:var(--text-secondary);">Peak Database CPU Load</span>
+              <span style="font-family:var(--font-mono); color:#ef4444; font-weight:700;">94% (Near Saturation)</span>
+            </div>
+            <div class="benchmark-progress-bar">
+              <div class="benchmark-progress-fill fill-legacy" style="width: 94%;"></div>
+            </div>
+          </div>
+
+          <div class="benchmark-stat-row">
+            <div class="benchmark-stat-labels">
+              <span style="color:var(--text-secondary);">Flash Sale Timeout Rate</span>
+              <span style="font-family:var(--font-mono); color:#ef4444; font-weight:700;">12.4% Failures</span>
+            </div>
+            <div class="benchmark-progress-bar">
+              <div class="benchmark-progress-fill fill-legacy" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jonathan's Optimized Enterprise Stack -->
+        <div class="benchmark-card highlight spotlight-card">
+          <div class="benchmark-header">
+            <div>
+              <h4 style="font-size:1.1rem; color:var(--accent-emerald);">Jonathan's Enterprise Architecture</h4>
+              <div style="font-size:0.8rem; color:var(--accent-cyan); font-family:var(--font-mono);">Spring Boot + Hybris + Ehcache Multi-Tier</div>
+            </div>
+            <span class="benchmark-badge-jonathan">96% FASTER</span>
+          </div>
+
+          <div class="benchmark-stat-row">
+            <div class="benchmark-stat-labels">
+              <span style="color:var(--text-secondary);">Avg Checkout Latency</span>
+              <span style="font-family:var(--font-mono); color:var(--accent-emerald); font-weight:700;">85 ms (-96%)</span>
+            </div>
+            <div class="benchmark-progress-bar">
+              <div class="benchmark-progress-fill fill-jonathan" style="width: 14%;"></div>
+            </div>
+          </div>
+
+          <div class="benchmark-stat-row">
+            <div class="benchmark-stat-labels">
+              <span style="color:var(--text-secondary);">Peak Database CPU Load</span>
+              <span style="font-family:var(--font-mono); color:var(--accent-emerald); font-weight:700;">26% (Healthy Buffer)</span>
+            </div>
+            <div class="benchmark-progress-bar">
+              <div class="benchmark-progress-fill fill-jonathan" style="width: 26%;"></div>
+            </div>
+          </div>
+
+          <div class="benchmark-stat-row">
+            <div class="benchmark-stat-labels">
+              <span style="color:var(--text-secondary);">Flash Sale Timeout Rate</span>
+              <span style="font-family:var(--font-mono); color:var(--accent-emerald); font-weight:700;">0.01% (Zero Drop)</span>
+            </div>
+            <div class="benchmark-progress-bar">
+              <div class="benchmark-progress-fill fill-jonathan" style="width: 4%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CAREER & LEADERSHIP TIMELINE
+       =================================================================== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">CAREER JOURNEY</div>
+        <h2 class="section-title">Experience & Leadership</h2>
+        <p class="section-subtitle">
+          Over 6 years of progressive engineering excellence, leading cross-functional squads and architecting mission-critical platforms.
+        </p>
+      </div>
+
+      <div class="timeline">
+        
+        <!-- Role 1: AGIT -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Java & Spring Boot Team Lead</h3>
+                <div class="timeline-company">PT. Astra Graphia Information Technology (AGIT) · Jakarta, Indonesia</div>
+              </div>
+              <div class="timeline-date-badge">Oct 2020 – Present</div>
+            </div>
+
+            <p class="timeline-desc">
+              Managing engineering squads at AGIT, leading the strategic modernization initiative to rewrite legacy monolithic SAP Hybris Commerce into decoupled Spring Boot microservices on Java, migrating Hybris APIs, building the high-speed Core System, and leveraging Apache Kafka for zero-downtime event streaming migration.
+            </p>
+
+            <ul class="timeline-bullets">
+              <li class="timeline-bullet"><strong>Developer Management:</strong> Managing developer squads, planning sprint milestones, establishing technical roadmaps, and conducting rigorous code review rubrics.</li>
+              <li class="timeline-bullet"><strong>SAP Hybris to Spring Boot Rewrite:</strong> Leading the architecture and rewrite of legacy monolithic SAP Hybris into agile, cloud-ready Spring Boot microservices powered by Java Virtual Threads.</li>
+              <li class="timeline-bullet"><strong>API Migration:</strong> Decoupling and migrating complex Hybris APIs into high-throughput RESTful endpoints with sub-85ms response times.</li>
+              <li class="timeline-bullet"><strong>Enterprise Core System:</strong> Designing and implementing the new high-availability Core System from the ground up using Spring Boot, Java, Spring Data JPA, and PostgreSQL.</li>
+              <li class="timeline-bullet"><strong>Apache Kafka Event Migration:</strong> Utilizing Apache Kafka event streaming for asynchronous data replication, CDC synchronization, and transactional state migration with zero downtime.</li>
+              <li class="timeline-bullet"><strong>Zero-Friction Password Migration:</strong> Exploring and architecting zero-friction credential migration from legacy SAP Hybris cryptographic hashing (PBKDF2/SHA with salt layout) to modern Spring Security (Argon2id / BCrypt) via just-in-time lazy re-hashing on login, eliminating forced password resets for millions of active user accounts.</li>
+              <li class="timeline-bullet"><strong>Enterprise Platforms Delivered:</strong> Successfully optimized core e-commerce pipelines for Astra Group flagship systems including <strong>Mango MotorkuX</strong>, <strong>Oddyseus Digiroom</strong>, and <strong>SEVA</strong>.</li>
+            </ul>
+
+            <div class="skill-tags">
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Java (Virtual Threads)</span>
+              <span class="skill-tag">Apache Kafka</span>
+              <span class="skill-tag">Password Migration</span>
+              <span class="skill-tag">Spring Security</span>
+              <span class="skill-tag">Argon2 / BCrypt</span>
+              <span class="skill-tag">SAP Hybris Migration</span>
+              <span class="skill-tag">API Migration</span>
+              <span class="skill-tag">Core System Design</span>
+              <span class="skill-tag">Developer Management</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Ehcache</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 2: Nibble Softworks -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Full Stack Software Engineer</h3>
+                <div class="timeline-company">Nibble Softworks · Indonesia</div>
+              </div>
+              <div class="timeline-date-badge">Mar 2019 – Jul 2020 (1 yr 5 mos)</div>
+            </div>
+
+            <p class="timeline-desc">
+              Engineered custom enterprise ERP implementations (Odoo 10/12) and responsive full stack web applications across diverse business sectors including retail, publishing, healthcare, and education.
+            </p>
+
+            <ul class="timeline-bullets">
+              <li class="timeline-bullet"><strong>Enterprise ERP Engineering:</strong> Developed and customized enterprise <strong>Odoo 10 / 12</strong> ERP solutions with Python and PostgreSQL for multi-branch retail, clinical diagnostic labs, publishing, and supply chain clients (Jayana, Femina Group, Cipta D.Lab, Sinar Harapan).</li>
+              <li class="timeline-bullet"><strong>Full Stack Web Platforms:</strong> Built modern web applications, institutional CMS portals, and catalog platforms using ReactJS, OctoberCMS, Node.js, and Sequelize ORM (Ursulin Indonesia CMS, SIMARU Catalog, Nibble Corporate Portal).</li>
+              <li class="timeline-bullet"><strong>POS & Mobile Integration:</strong> Integrated cross-platform mobile retail POS cashiers using Flutter communicating via secure XML-RPC APIs with offline-first synchronization.</li>
+            </ul>
+
+            <div class="skill-tags">
+              <span class="skill-tag">Odoo 12 ERP</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">ReactJS</span>
+              <span class="skill-tag">OctoberCMS</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Full Stack Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 3: Education & Credentials -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Bachelor of Computer Science (B.Comp.Sc.)</h3>
+                <div class="timeline-company">Parahyangan Catholic University (UNPAR)</div>
+              </div>
+              <div class="timeline-date-badge">2015 – 2019</div>
+            </div>
+
+            <p class="timeline-desc">
+              Graduated with a strong academic distinction (<strong>GPA: 3.56 / 4.00</strong>). Active student leader serving as Vice Head of Public Relations in the Informatics Student Association.
+            </p>
+
+            <ul class="timeline-bullets">
+              <li class="timeline-bullet"><strong>Cisco Certified:</strong> CCNA Routing & Switching: Routing & Switching Essentials.</li>
+              <li class="timeline-bullet"><strong>Cisco Certified:</strong> CCNA Routing & Switching: Introduction to Networks.</li>
+            </ul>
+
+            <div class="skill-tags">
+              <span class="skill-tag">Computer Science</span>
+              <span class="skill-tag">GPA 3.56</span>
+              <span class="skill-tag">Cisco CCNA</span>
+              <span class="skill-tag">Data Structures & Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FEATURED ENTERPRISE PROJECTS
+       =================================================================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">PORTFOLIO HIGHLIGHTS</div>
+        <h2 class="section-title">Featured Production Systems</h2>
+        <p class="section-subtitle">
+          Real enterprise systems built and optimized for millions of active users and high-value transactions.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ecommerce">Enterprise Core & Commerce</button>
+        <button class="filter-btn" data-filter="erp">ERP & Business Systems (Nibble)</button>
+        <button class="filter-btn" data-filter="web">Web & Institutional Platforms</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project: Hybris Rewrite Core & Kafka (AGIT) -->
+        <div class="project-card" data-category="ecommerce" data-project="hybris_rewrite">
+          <div class="project-top">
+            <span class="project-category">CORE REWRITE & KAFKA · AGIT</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">Hybris-to-Spring Boot Core Rewrite</h3>
+          <p class="project-snippet">
+            Managing developer squads to rewrite monolithic SAP Hybris Commerce with decoupled Spring Boot microservices. Migrating legacy APIs, architecting the Core System, and leveraging Apache Kafka for zero-downtime event streaming migration.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Kafka Streaming & Zero-Downtime Migration</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Apache Kafka</span>
+            <span class="skill-tag">API Migration</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Project: MotorkuX (AGIT) -->
+        <div class="project-card" data-category="ecommerce" data-project="motorkux">
+          <div class="project-top">
+            <span class="project-category">ENTERPRISE COMMERCE · AGIT</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">Mango MotorkuX</h3>
+          <p class="project-snippet">
+            Astra Motor's flagship digital customer ecosystem. Overhauled the multi-step checkout pipeline, integrated virtual showroom map locator via Google Maps API, and cut catalog search latency under 80ms.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>+28% Checkout Completion Rate</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">SAP Commerce</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Google Maps API</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+
+        <!-- Project: Digiroom (AGIT) -->
+        <div class="project-card" data-category="ecommerce" data-project="digiroom">
+          <div class="project-top">
+            <span class="project-category">ENTERPRISE COMMERCE · AGIT</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">Oddyseus Digiroom</h3>
+          <p class="project-snippet">
+            Auto2000 digital automotive showroom platform. Built automated customer inquiry distribution pipelines, dynamic e-certificate PDF generator, and real-time dual-color vehicle preview logic.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Automated E-Certificate Engine</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">SAP Hybris</span>
+            <span class="skill-tag">Java 11</span>
+            <span class="skill-tag">Apache PDFBox</span>
+            <span class="skill-tag">Microservices</span>
+          </div>
+        </div>
+
+        <!-- Project: SEVA (AGIT) -->
+        <div class="project-card" data-category="ecommerce" data-project="seva">
+          <div class="project-top">
+            <span class="project-category">ENTERPRISE COMMERCE · AGIT</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">SEVA Platform</h3>
+          <p class="project-snippet">
+            Astra Digital automotive financing marketplace. Customized SAP Hybris backoffice operations modules and connected comprehensive user journey telemetry via Google Analytics & Tag Manager.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>High-Volume Transaction Security</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Backoffice Custom</span>
+            <span class="skill-tag">GTM / GA</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Project: Jayana (Nibble) -->
+        <div class="project-card" data-category="erp" data-project="jayana">
+          <div class="project-top">
+            <span class="project-category">ERP & POS · NIBBLE SOFTWORKS</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">Jayana Retail ERP & POS</h3>
+          <p class="project-snippet">
+            End-to-end retail and inventory automation platform connecting physical points of sale with centralized backend accounting. Developed cross-platform mobile POS app with Flutter and Odoo 12 Python.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Multi-Store Offline-First Sync</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Odoo 12</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">XML-RPC</span>
+          </div>
+        </div>
+
+        <!-- Project: Femina Group (Nibble) -->
+        <div class="project-card" data-category="erp" data-project="femina">
+          <div class="project-top">
+            <span class="project-category">ERP & SYSTEMS · NIBBLE SOFTWORKS</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">Femina Group Information System</h3>
+          <p class="project-snippet">
+            Custom ERP modernization for a leading Indonesian publishing group. Replaced manual paper invoices with automated fiscal workflows, subscription schedules, and custom QWeb PDF reporting.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Automated Indonesian Tax Balance</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Odoo 12</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">QWeb PDF</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Project: Cipta D.Lab (Nibble) -->
+        <div class="project-card" data-category="erp" data-project="cipta_dlab">
+          <div class="project-top">
+            <span class="project-category">HEALTHCARE ERP · NIBBLE SOFTWORKS</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">Cipta D.Lab Clinical System</h3>
+          <p class="project-snippet">
+            Tailor-made clinical information system for medical diagnostic laboratories managing patient test requisitions, automated lab specimen workflows, barcode generation, and billing.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Clinical Specimen Tracking</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Odoo 10</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">XML-RPC</span>
+          </div>
+        </div>
+
+        <!-- Project: Sinar Harapan (Nibble) -->
+        <div class="project-card" data-category="erp" data-project="sinar_harapan">
+          <div class="project-top">
+            <span class="project-category">DISTRIBUTION ERP · NIBBLE SOFTWORKS</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">Sinar Harapan Distribution System</h3>
+          <p class="project-snippet">
+            Supply chain and multi-warehouse distribution automation platform managing inventory movements, supplier approvals, purchase journals, and invoice reconciliations.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Multi-Warehouse Logistics Engine</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Odoo ERP</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Supply Chain</span>
+          </div>
+        </div>
+
+        <!-- Project: Ursulin CMS (Nibble) -->
+        <div class="project-card" data-category="web" data-project="ursulin">
+          <div class="project-top">
+            <span class="project-category">INSTITUTIONAL CMS · NIBBLE SOFTWORKS</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">Ursulin Indonesia CMS Portal</h3>
+          <p class="project-snippet">
+            Centralized institutional content management system serving educational and community branches across Indonesia. Built with modular OctoberCMS plugins and responsive mobile-optimized layouts.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Multi-Branch Institutional Portal</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">OctoberCMS</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project: Nibble Corporate Web (Nibble) -->
+        <div class="project-card" data-category="web" data-project="nibble_web">
+          <div class="project-top">
+            <span class="project-category">CORPORATE PORTAL · NIBBLE SOFTWORKS</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">Nibble Softworks Company Profile</h3>
+          <p class="project-snippet">
+            Official agency web presence for Nibble Softworks showcasing bespoke software engineering capabilities, portfolio case studies, and customer inquiry funnels integrated with Odoo CRM.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Lead Generation & Showcase</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Odoo 12 Website</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- Project: SIMARU (Nibble) -->
+        <div class="project-card" data-category="web" data-project="simaru">
+          <div class="project-top">
+            <span class="project-category">FULL STACK & APIS · NIBBLE SOFTWORKS</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">SIMARU Catalog System</h3>
+          <p class="project-snippet">
+            High-speed institutional asset catalog and room booking platform. Designed responsive ReactJS UI, token-based role security, and Sequelize ORM query optimizations on MySQL.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Instant Search & Role-Based Auth</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">ReactJS</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Sequelize</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+
+        <!-- Project: UNPAR (Academic) -->
+        <div class="project-card" data-category="web" data-project="unpar_thesis">
+          <div class="project-top">
+            <span class="project-category">ACADEMIC WORKFLOW · UNPAR</span>
+            <div class="project-arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="project-name">UNPAR Thesis & Curriculum System</h3>
+          <p class="project-snippet">
+            Academic workflow system managing student thesis defense registrations, supervisor evaluations, and institutional accreditation learning outcome rubrics at Parahyangan Catholic University.
+          </p>
+          <div class="project-metrics-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+            <span>Thesis Defense & Assessment Automation</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SENIOR DEVELOPER CLI TERMINAL (senior-dev-cli)
+       =================================================================== -->
+  <section id="terminal">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">INTERACTIVE CLI EMULATOR</div>
+        <h2 class="section-title">Developer Terminal</h2>
+        <p class="section-subtitle">
+          Type terminal commands or click the quick command chips below to inspect Jonathan's competencies, philosophy, or initiate hiring protocols.
+        </p>
+      </div>
+
+      <div class="terminal-wrapper">
+        <div class="terminal-topbar">
+          <div class="terminal-dots">
+            <span class="t-dot red"></span>
+            <span class="t-dot yellow"></span>
+            <span class="t-dot green"></span>
+          </div>
+          <div class="terminal-title">jonathan@dev-cluster: ~/senior-lead-session</div>
+          <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-emerald);">v2.4.0-prod</div>
+        </div>
+
+        <div class="terminal-body" id="terminal-body">
+          <div id="terminal-output" class="terminal-output">
+            <div class="term-line">
+              <span class="term-success">Connected to Jonathan Alva's Senior Engineering Environment.</span>
+            </div>
+            <div class="term-line">
+              <span class="term-dim">Type <span class="term-cmd">'help'</span> to see all available commands, or click the quick tags below.</span>
+            </div>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">jonathan@dev:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'help', 'skills', 'whoami', 'sudo hire'..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+
+        <div class="terminal-quick-cmds">
+          <span style="font-family:var(--font-mono); font-size:0.76rem; color:var(--text-muted); align-self:center;">Quick Run:</span>
+          <button class="quick-cmd-btn" data-cmd="whoami">whoami</button>
+          <button class="quick-cmd-btn" data-cmd="skills">skills</button>
+          <button class="quick-cmd-btn" data-cmd="projects">projects</button>
+          <button class="quick-cmd-btn" data-cmd="experience">experience</button>
+          <button class="quick-cmd-btn" data-cmd="architecture">architecture</button>
+          <button class="quick-cmd-btn" data-cmd="sudo hire">sudo hire 🚀</button>
+          <button class="quick-cmd-btn" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CONTACT & COLLABORATION
+       =================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">LET'S CONNECT</div>
+        <h2 class="section-title">Initiate Collaboration</h2>
+        <p class="section-subtitle">
+          Seeking a seasoned Tech Lead or Senior Software Engineer to accelerate your enterprise platform? Let's discuss your engineering milestones.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Contact Details -->
+        <div class="contact-card">
+          <h3 style="font-size:1.4rem; margin-bottom:16px;">Direct Channels</h3>
+          <p style="margin-bottom:28px;">
+            Based in Jakarta, Indonesia. Available for hybrid or remote senior engineering leadership, architectural advisory, and technical consultations.
+          </p>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-text-label">EMAIL ADDRESS</div>
+              <div class="contact-text-val">
+                <a href="mailto:jonathan.alva97@yahoo.com" class="copy-email-btn" data-email="jonathan.alva97@yahoo.com" style="color:var(--text-main); font-weight:600; font-size:1rem; text-decoration:underline; display:inline-flex; align-items:center; gap:6px;">
+                  jonathan.alva97@yahoo.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-text-label">LINKEDIN PROFILE</div>
+              <div class="contact-text-val">
+                <a href="https://www.linkedin.com/in/jnthnalva" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan); text-decoration:none;">
+                  linkedin.com/in/jnthnalva
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-text-label">LOCATION</div>
+              <div class="contact-text-val">Jakarta, Indonesia</div>
+            </div>
+          </div>
+
+          <div style="margin-top:24px;">
+            <a href="https://www.linkedin.com/in/jnthnalva" target="_blank" class="btn-primary" style="width:100%; justify-content:center;">
+              Connect Directly on LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Message Form -->
+        <div class="contact-card">
+          <h3 style="font-size:1.4rem; margin-bottom:6px;">Send a Direct Message</h3>
+          <p style="font-size:0.86rem; color:var(--text-muted); margin-bottom:18px;">Directly delivered to <strong style="color:var(--accent-cyan);">jonathan.alva97@yahoo.com</strong></p>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">YOUR NAME</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Johnson" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">YOUR EMAIL</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">PROJECT DETAILS / INQUIRY</label>
+              <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Describe the role or architecture challenges..." required></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit-btn" class="btn-primary" style="justify-content:center; margin-top:8px;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div style="margin-bottom:12px; font-family:var(--font-mono);">
+        &lt;JA /&gt; Jonathan Alva — Senior Software Engineer & Team Lead
+      </div>
+      <div>
+        Designed with Dark OLED aesthetics & UI/UX Pro Max intelligence · Built for enterprise performance.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       INTERACTIVE PROJECT DETAILS MODAL
+       =================================================================== -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+        <span id="modal-badge" class="section-badge" style="margin-bottom:0;"></span>
+      </div>
+
+      <h3 id="modal-title" style="font-size:1.8rem; margin-bottom:6px;"></h3>
+      <div id="modal-subtitle" style="font-family:var(--font-mono); font-size:0.88rem; color:var(--accent-cyan); margin-bottom:20px;"></div>
+
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem; margin-bottom:8px; color:var(--text-main);">Project Overview</h4>
+        <p id="modal-overview" style="line-height:1.6; font-size:0.94rem;"></p>
+      </div>
+
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem; margin-bottom:8px; color:var(--text-main);">Key Engineering Achievements</h4>
+        <ul id="modal-bullets" style="list-style:none; padding:0;"></ul>
+      </div>
+
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem; margin-bottom:8px; color:var(--text-main);">Architecture & Design Pattern</h4>
+        <p id="modal-architecture" style="line-height:1.6; font-size:0.92rem; color:var(--text-secondary); background:rgba(0,0,0,0.3); padding:12px 16px; border-radius:8px; border:1px solid rgba(255,255,255,0.06);"></p>
+      </div>
+
+      <div>
+        <h4 style="font-size:0.85rem; font-family:var(--font-mono); color:var(--text-muted); margin-bottom:10px;">TECHNOLOGY STACK</h4>
+        <div id="modal-stack" class="skill-tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP & ScrollTrigger Animation Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Application Scripts -->
+  <script src="assets/js/canvas-bg.js"></script>
+  <script src="assets/js/architecture.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/animations-pro.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
